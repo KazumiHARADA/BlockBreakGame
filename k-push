@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+  echo "error:usage k-push branch_name" 1>&2
+  exit 1
+fi
+
+$BRANCH=$1
+
+#存在確認したい
+
+git push kserver $BRANCH
+git push github $BRANCH
+
