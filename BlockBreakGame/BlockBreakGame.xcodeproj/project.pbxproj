@@ -16,7 +16,6 @@
 		5E538984188C1528002EA648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E538983188C1528002EA648 /* AppDelegate.m */; };
 		5E538987188C1528002EA648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E538985188C1528002EA648 /* Main.storyboard */; };
 		5E53898A188C1528002EA648 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E538989188C1528002EA648 /* ViewController.m */; };
-		5E53898D188C1528002EA648 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E53898C188C1528002EA648 /* MyScene.m */; };
 		5E53898F188C1528002EA648 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E53898E188C1528002EA648 /* Spaceship.png */; };
 		5E538991188C1528002EA648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E538990188C1528002EA648 /* Images.xcassets */; };
 		5E538998188C1528002EA648 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E538997188C1528002EA648 /* XCTest.framework */; };
@@ -25,6 +24,8 @@
 		5E5389A2188C1528002EA648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5389A0188C1528002EA648 /* InfoPlist.strings */; };
 		5E5389A4188C1528002EA648 /* BlockBreakGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389A3188C1528002EA648 /* BlockBreakGameTests.m */; };
 		5E5389B0188C16F7002EA648 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E5389AF188C16F7002EA648 /* config.json */; };
+		5E5389B4188C1853002EA648 /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389B3188C1853002EA648 /* SJTitleScene.m */; };
+		5E5389B7188C18EE002EA648 /* SJPlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389B6188C18EE002EA648 /* SJPlayScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,6 @@
 		5E538986188C1528002EA648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E538988188C1528002EA648 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5E538989188C1528002EA648 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5E53898B188C1528002EA648 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyScene.h; path = BlockBreakGame/MyScene.h; sourceTree = "<group>"; };
-		5E53898C188C1528002EA648 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = BlockBreakGame/MyScene.m; sourceTree = "<group>"; };
 		5E53898E188C1528002EA648 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		5E538990188C1528002EA648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E538996188C1528002EA648 /* BlockBreakGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockBreakGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +61,10 @@
 		5E5389A1188C1528002EA648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E5389A3188C1528002EA648 /* BlockBreakGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockBreakGameTests.m; sourceTree = "<group>"; };
 		5E5389AF188C16F7002EA648 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		5E5389B2188C1853002EA648 /* SJTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SJTitleScene.h; path = BlockBreakGame/SJTitleScene.h; sourceTree = "<group>"; };
+		5E5389B3188C1853002EA648 /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SJTitleScene.m; path = BlockBreakGame/SJTitleScene.m; sourceTree = "<group>"; };
+		5E5389B5188C18EE002EA648 /* SJPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPlayScene.h; sourceTree = "<group>"; };
+		5E5389B6188C18EE002EA648 /* SJPlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPlayScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +171,10 @@
 		5E5389AD188C16BB002EA648 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5E53898C188C1528002EA648 /* MyScene.m */,
-				5E53898B188C1528002EA648 /* MyScene.h */,
+				5E5389B2188C1853002EA648 /* SJTitleScene.h */,
+				5E5389B3188C1853002EA648 /* SJTitleScene.m */,
+				5E5389B5188C18EE002EA648 /* SJPlayScene.h */,
+				5E5389B6188C18EE002EA648 /* SJPlayScene.m */,
 			);
 			name = Scenes;
 			path = ..;
@@ -291,9 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E53898D188C1528002EA648 /* MyScene.m in Sources */,
+				5E5389B7188C18EE002EA648 /* SJPlayScene.m in Sources */,
 				5E53898A188C1528002EA648 /* ViewController.m in Sources */,
 				5E538984188C1528002EA648 /* AppDelegate.m in Sources */,
+				5E5389B4188C1853002EA648 /* SJTitleScene.m in Sources */,
 				5E538980188C1528002EA648 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

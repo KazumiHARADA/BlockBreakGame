@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MyScene.h"
+#import "SJTitleScene.h"
 
 @implementation ViewController
 
@@ -22,7 +22,7 @@
     skView.showsDrawCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [SJTitleScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
