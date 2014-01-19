@@ -26,6 +26,7 @@
 		5E5389B0188C16F7002EA648 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E5389AF188C16F7002EA648 /* config.json */; };
 		5E5389B4188C1853002EA648 /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389B3188C1853002EA648 /* SJTitleScene.m */; };
 		5E5389B7188C18EE002EA648 /* SJPlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389B6188C18EE002EA648 /* SJPlayScene.m */; };
+		5E5389C3188C209B002EA648 /* SJGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389C2188C209B002EA648 /* SJGameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		5E5389B3188C1853002EA648 /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SJTitleScene.m; path = BlockBreakGame/SJTitleScene.m; sourceTree = "<group>"; };
 		5E5389B5188C18EE002EA648 /* SJPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPlayScene.h; sourceTree = "<group>"; };
 		5E5389B6188C18EE002EA648 /* SJPlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPlayScene.m; sourceTree = "<group>"; };
+		5E5389C1188C209B002EA648 /* SJGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJGameOverScene.h; sourceTree = "<group>"; };
+		5E5389C2188C209B002EA648 /* SJGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJGameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				5E5389B3188C1853002EA648 /* SJTitleScene.m */,
 				5E5389B5188C18EE002EA648 /* SJPlayScene.h */,
 				5E5389B6188C18EE002EA648 /* SJPlayScene.m */,
+				5E5389C1188C209B002EA648 /* SJGameOverScene.h */,
+				5E5389C2188C209B002EA648 /* SJGameOverScene.m */,
 			);
 			name = Scenes;
 			path = ..;
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5389B7188C18EE002EA648 /* SJPlayScene.m in Sources */,
+				5E5389C3188C209B002EA648 /* SJGameOverScene.m in Sources */,
 				5E53898A188C1528002EA648 /* ViewController.m in Sources */,
 				5E538984188C1528002EA648 /* AppDelegate.m in Sources */,
 				5E5389B4188C1853002EA648 /* SJTitleScene.m in Sources */,
