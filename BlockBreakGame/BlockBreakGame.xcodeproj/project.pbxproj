@@ -24,6 +24,7 @@
 		5E53899A188C1528002EA648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E538975188C1528002EA648 /* UIKit.framework */; };
 		5E5389A2188C1528002EA648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5389A0188C1528002EA648 /* InfoPlist.strings */; };
 		5E5389A4188C1528002EA648 /* BlockBreakGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5389A3188C1528002EA648 /* BlockBreakGameTests.m */; };
+		5E5389B0188C16F7002EA648 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E5389AF188C16F7002EA648 /* config.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,8 @@
 		5E538986188C1528002EA648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E538988188C1528002EA648 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5E538989188C1528002EA648 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5E53898B188C1528002EA648 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		5E53898C188C1528002EA648 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		5E53898B188C1528002EA648 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyScene.h; path = BlockBreakGame/MyScene.h; sourceTree = "<group>"; };
+		5E53898C188C1528002EA648 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = BlockBreakGame/MyScene.m; sourceTree = "<group>"; };
 		5E53898E188C1528002EA648 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		5E538990188C1528002EA648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E538996188C1528002EA648 /* BlockBreakGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockBreakGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,7 @@
 		5E53899F188C1528002EA648 /* BlockBreakGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockBreakGameTests-Info.plist"; sourceTree = "<group>"; };
 		5E5389A1188C1528002EA648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E5389A3188C1528002EA648 /* BlockBreakGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockBreakGameTests.m; sourceTree = "<group>"; };
+		5E5389AF188C16F7002EA648 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +123,12 @@
 		5E538979188C1528002EA648 /* BlockBreakGame */ = {
 			isa = PBXGroup;
 			children = (
+				5E5389B1188C170C002EA648 /* Controllers */,
+				5E5389AE188C16E9002EA648 /* Assets */,
+				5E5389AD188C16BB002EA648 /* Scenes */,
 				5E538982188C1528002EA648 /* AppDelegate.h */,
 				5E538983188C1528002EA648 /* AppDelegate.m */,
 				5E538985188C1528002EA648 /* Main.storyboard */,
-				5E538988188C1528002EA648 /* ViewController.h */,
-				5E538989188C1528002EA648 /* ViewController.m */,
-				5E53898B188C1528002EA648 /* MyScene.h */,
-				5E53898C188C1528002EA648 /* MyScene.m */,
 				5E53898E188C1528002EA648 /* Spaceship.png */,
 				5E538990188C1528002EA648 /* Images.xcassets */,
 				5E53897A188C1528002EA648 /* Supporting Files */,
@@ -162,6 +163,33 @@
 				5E5389A0188C1528002EA648 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E5389AD188C16BB002EA648 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5E53898C188C1528002EA648 /* MyScene.m */,
+				5E53898B188C1528002EA648 /* MyScene.h */,
+			);
+			name = Scenes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5E5389AE188C16E9002EA648 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5E5389AF188C16F7002EA648 /* config.json */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		5E5389B1188C170C002EA648 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E538989188C1528002EA648 /* ViewController.m */,
+				5E538988188C1528002EA648 /* ViewController.h */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +270,7 @@
 			files = (
 				5E53897E188C1528002EA648 /* InfoPlist.strings in Resources */,
 				5E538991188C1528002EA648 /* Images.xcassets in Resources */,
+				5E5389B0188C16F7002EA648 /* config.json in Resources */,
 				5E53898F188C1528002EA648 /* Spaceship.png in Resources */,
 				5E538987188C1528002EA648 /* Main.storyboard in Resources */,
 			);
