@@ -18,6 +18,7 @@ static const uint32_t ballCategory = 0x1 << 1;
 @implementation SJPlayScene
 
 - (id)initWithSize:(CGSize)size {
+    game_over_flg = 0;
     self = [super initWithSize:size];
     if (self) {
         [self addBlocks];
@@ -175,6 +176,16 @@ static NSDictionary *config = nil;
     }
 }
 
+- (void)update:(NSTimeInterval)currentTime {
+    if((int)currentTime % 5 == 0) {
+        CGVector velocity = [self ballNode].physicsBody.velocity;
+        velocity.dx *= 1.001f;
+        velocity.dy *= 1.001f;
+        [self ballNode].physicsBody.velocity = velocity;
+    }
+}
+
+
 # pragma mark - Touch
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -198,12 +209,13 @@ static NSDictionary *config = nil;
 
 - (void)didSimulatePhysics {
     if ([self ballNode] && [self ballNode].position.y < [config[@"ball"][@"radius"] floatValue] * 2) {
-                   [self gameOver];
-        
+        [self gameOver];
     }
 }
 
 - (void)gameOver {
+    //NSLog([self ballNode]);
+    [[self ballNode] removeFromParent];
     SKScene *scene = [SJGameOverScene sceneWithSize:self.size];
     SKTransition *transition = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:1.0f];
     [self.view presentScene:scene transition:transition];

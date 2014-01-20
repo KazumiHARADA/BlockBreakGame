@@ -8,6 +8,9 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface SJPlayScene : SKScene
+@interface SJPlayScene : SKScene {
 
+int game_over_flg;
+
+}
 @end
